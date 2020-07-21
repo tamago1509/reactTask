@@ -1,0 +1,32 @@
+
+.form label{
+    text-align: left;
+ 
+
+}
+.form .input{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 35px;
+    width: 30%;
+    margin-bottom: 20px;
+
+}
+.form button{
+    background-color: #00bd56;
+    border: 0;
+    border-radius: 5px;
+    height: 35px;
+    color: #fff;
+    width: 30%;
+    margin-bottom: 25px;
+}
+.form a{
+    color: #000;
+    margin-right: 15px;
+}
+.form .label{
+    display: inline-block;
+    margin: 10px;
+    
+}
