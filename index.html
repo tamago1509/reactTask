@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+	
+
+	<div id="root"></div>
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+	<script>
+		const Task1 = React.createElement('li', null,'Go to market');
+		const Task2 = React.createElement('li', null,'Buy food');
+		const Task3 = React.createElement('li', null,'Make dinner');
+		const Todos = React.createElement('ul',{className: 'todos'}, Task1,Task2,Task3);
+		const root = document.getElementById('root');
+		ReactDOM.render(Todos, root);
+	</script>
+</body>
+</html>
