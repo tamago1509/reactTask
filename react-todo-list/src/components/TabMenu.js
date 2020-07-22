@@ -5,21 +5,22 @@ class TabMenu extends Component{
     
     render(){
         return (
-            
-                <div className = "tabMenu">
-                    <a href="#" >
-                        <img src={this.props.src}/>
-                    <br />
-                    {this.props.title}
-                    </a>
-
-                </div>  
-         
-            
+            <nav className ="navbar">
+                {
+                   this.props.items.map(item => 
+                    (
+                        <div className = "tabMenu">
+                            <a href="#" >
+                                <img src={item.src}/>
+                                <br />
+                                {item.title}
+                            </a>
+                        </div>
+                    )
+                    )
+                }
+            </nav> 
         )
-    }
-    
-        
-    
+    }   
 }
 export default TabMenu;
