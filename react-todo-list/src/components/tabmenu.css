@@ -19,6 +19,8 @@
     border-top: 1px solid  #00bd56;
     background-color: #fff;
     border-bottom: 1px solid #999;
+    border-right: #ccc;
+    border-left: #ccc;
     
 }
 .tabMenu:hover a{
