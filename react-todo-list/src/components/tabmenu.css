@@ -1,0 +1,29 @@
+.navbar img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    filter: opacity(0.7) drop-shadow(0 0 0 #eee);
+    
+}
+.tabMenu{
+    border: 1px solid #999;
+    width: 100px;
+    background-color: #ddd;
+}
+.tabMenu a{
+    color: #999;
+    text-decoration: none;
+    
+}
+.tabMenu:hover {
+    border-top: 1px solid  #00bd56;
+    background-color: #fff;
+    border-bottom: 1px solid #999;
+    
+}
+.tabMenu:hover a{
+    color: #00bd56;
+}
+.tabMenu:hover a img{
+    filter: opacity(0.3) drop-shadow(0 0 0 #00bd56); 
+}
