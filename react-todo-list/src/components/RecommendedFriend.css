@@ -1,0 +1,17 @@
+.image img{
+    border-radius: 50%;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.sub{
+    font-size: 0.9em;
+    color: #999;
+}
+.follow a{
+    margin-left: 20px;
+    text-decoration: none;
+}
