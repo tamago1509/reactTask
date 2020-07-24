@@ -1,0 +1,21 @@
+.table{
+    margin: 30px 20px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+tr{
+    height: 50px;
+    background-color: #f2f2f2;
+}
+
+
+.tr-is-even{
+
+    background-color: #fff;
+    
+}
