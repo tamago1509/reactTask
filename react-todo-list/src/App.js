@@ -8,6 +8,7 @@ import Table from './components/Table';
 import Notification from './components/Notification';
 import Traficlight from './components/Traficlight';
 import Search from './components/Search';
+import InputLimit from './components/InputLimit';
 
 
 
@@ -26,7 +27,8 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Search />
+        <InputLimit />
+          {/* <Search /> */}
           {/* <Traficlight /> */}
           {/* <Notification /> */}
           {/* <Table /> */}

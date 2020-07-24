@@ -1,16 +1,21 @@
 import React, { Component } from 'react'
-import './Search.css';
+import './InputLimit.css';
 
 
-export class Search extends Component {
+
+
+export class InputLimit extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             isFocus: false
+             isFocus: false,
+             inputValue : ""
+
         }
         this.changeFocus = this.changeFocus.bind(this)
         this.changeBlur = this.changeBlur.bind(this)
+        this.getInputValue = this.getInputValue.bind(this)
 
     }
     changeFocus(){
@@ -25,13 +30,23 @@ export class Search extends Component {
             isFocus: !this.state.isFocus
         })
     }
+    getInputValue(e){
+        this.setState({
+            inputValue: e.target.value
+
+        })
+    }
     render() {
+        
         return (
             <div className="search-bar">
-                <input onFocus = {this.changeFocus} 
-                onBlur = {this.changeBlur}
-                onKeyUp={this.takeInputValue}
-                type="text" placeholder="Type something to search... "/>
+                <input 
+                    onFocus = {this.changeFocus} 
+                    onBlur = {this.changeBlur}
+                    onChange={this.getInputValue}
+                    type="text" placeholder="Type something to search... "
+                    className={ this.state.inputValue.length > 10 ? 'turnRed' : '' } 
+                />
                 {
                     !this.state.isFocus && <img src="https://image.flaticon.com/icons/svg/622/622669.svg"/> 
                 }
@@ -41,4 +56,4 @@ export class Search extends Component {
     }
 }
 
-export default Search
+export default InputLimit
