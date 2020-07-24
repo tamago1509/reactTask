@@ -22,19 +22,19 @@ export class Traficlight extends Component {
             })
         }, 2000);
     }
-        nextColor(color) {
-            switch(color){
-                case ORANGE:
-                    return BLUE;
-                    break;
-                case BLUE:
-                    return RED;
-                    break;
-                default:
-                    return ORANGE;
-                    break;
-            }
+    nextColor(color) {
+        switch(color){
+            case ORANGE:
+                return BLUE;
+                break;
+            case BLUE:
+                return RED;
+                break;
+            default:
+                return ORANGE;
+                break;
         }
+    }
     
     
     

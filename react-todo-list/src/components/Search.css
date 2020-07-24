@@ -1,0 +1,23 @@
+.search-bar{
+    margin: 30px;
+}
+
+.search-bar input{
+    width: 400px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    position: relative;
+    
+}
+.search-bar img{
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    right: 35%;
+    top: 38px;
+}
+::placeholder{
+    padding-left: 10px;
+
+}

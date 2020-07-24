@@ -7,6 +7,8 @@ import FollowFriendListItem from './components/FollowFriendListItem';
 import Table from './components/Table';
 import Notification from './components/Notification';
 import Traficlight from './components/Traficlight';
+import Search from './components/Search';
+
 
 
 // const items = [
@@ -24,7 +26,8 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Traficlight />
+        <Search />
+          {/* <Traficlight /> */}
           {/* <Notification /> */}
           {/* <Table /> */}
           {/* <FollowFriendListItem /> */}
