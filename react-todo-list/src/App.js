@@ -9,6 +9,7 @@ import Notification from './components/Notification';
 import Traficlight from './components/Traficlight';
 import Search from './components/Search';
 import InputLimit from './components/InputLimit';
+import Validate from './components/Validate';
 
 
 
@@ -27,7 +28,8 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <InputLimit />
+        <Validate />
+          {/* <InputLimit /> */}
           {/* <Search /> */}
           {/* <Traficlight /> */}
           {/* <Notification /> */}
