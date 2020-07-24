@@ -4,7 +4,8 @@ import FormLogin from './components/FormLogin';
 import TabMenu from './components/TabMenu';
 import './App.css';
 import FollowFriendListItem from './components/FollowFriendListItem';
-import Table from './components/Table'
+import Table from './components/Table';
+import Notification from './components/Notification';
 
 
 // const items = [
@@ -22,7 +23,8 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Table />
+        <Notification />
+          {/* <Table /> */}
           {/* <FollowFriendListItem /> */}
           {/* <TabMenu items = { items } /> */}
         
