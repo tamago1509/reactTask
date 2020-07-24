@@ -6,6 +6,7 @@ import './App.css';
 import FollowFriendListItem from './components/FollowFriendListItem';
 import Table from './components/Table';
 import Notification from './components/Notification';
+import Traficlight from './components/Traficlight';
 
 
 // const items = [
@@ -23,7 +24,8 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Notification />
+        <Traficlight />
+          {/* <Notification /> */}
           {/* <Table /> */}
           {/* <FollowFriendListItem /> */}
           {/* <TabMenu items = { items } /> */}

@@ -1,0 +1,21 @@
+.bulb{
+    width: 64px;
+    height: 64px;
+    opacity: 0.3;
+    border-radius: 50px;
+    margin: 20px;
+
+}
+.active{
+    opacity: 1;
+}
+.red{
+    background-color: #f00;
+
+}
+.orange{
+    background-color: orange;
+}
+.blue{
+    background-color: #00f;
+}
