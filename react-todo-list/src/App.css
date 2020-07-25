@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  
+  
 }
 
 .App-logo {
@@ -40,4 +42,50 @@
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+show{
+  display: block;
+
+}
+
+.modal{
+
+  z-index: 3;
+  width: 40%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-left: 30%;
+  margin-top: 30px;
+  position: relative;
+  background-color: #fff;
+  
+  
+}
+.x{
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+.btn{
+  border: 0;
+  height: 30px;
+  width: 100px;
+  color: #fff;
+}
+.ok{
+  background-color: #28a745 ;
+  margin: 15px;
+  
+}
+.no{
+  background-color: #d63447;
+
+}
+.cover{
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 2 ;
+  height: 100vh;
 }
