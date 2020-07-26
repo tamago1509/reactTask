@@ -10,6 +10,7 @@ import Traficlight from './components/Traficlight';
 import Search from './components/Search';
 import InputLimit from './components/InputLimit';
 import Validate from './components/Validate';
+import Todolist from './components/Todolist'
 
 
 
@@ -24,60 +25,15 @@ import Validate from './components/Validate';
 
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state= {
-      show: false
-    }
-  this.openModal = this.openModal.bind(this)
-    
-  }
-  openModal(){
-    this.setState({
-      show: !this.state.show
-    })
-
-  }
   
   
   render(){
-    const {show} = this.state
+    
     return (
       <div className="App">
-        <div className="ground1">
-          <h2>Click the button to open Modal</h2>
-          <button className="open" onClick={this.openModal}>Open</button>
-        </div>
-        {
-          show && (
-          <div className= 'cover'onClick={this.openModal}>
-            <div className="modal" >
-              <div className="title">
-                <h2>This is a modal</h2>
-              </div>
-              <div className="content">
-                <button className="x" onClick={this.openModal}>
-                  <span >&times;</span>
-                </button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ut nemo excepturi ullam nihil, asperiores nisi atque ea dolores.
-                    Sed voluptates alias optio, sint numquam accusamus.
-                    Recusandae quia necessitatibus labore exercitationem!
-                    Porro aliquam necessitatibus, 
-                    expedita modi doloremque fugit eligendi facilis accusantium per
-                </p>
-              </div>
-              <div className="gr-btn">
-                <button className="btn ok" onClick={this.openModal}>Accept</button>
-                <button className="btn no" onClick={this.openModal}>Decline</button>
-              </div>
-            </div>
-          </div>
-          
-        )
-        }
         
+
+        <Todolist />
           {/* <Validate /> */}
           {/* <InputLimit /> */}
           {/* <Search /> */}
