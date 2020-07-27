@@ -27,28 +27,18 @@ import Modal from './components/Modal';
 
 class App extends Component {
 
-  constructor(props) {
-    super(props)
-  
-    this.state = {
-       
-    }
-  }
-  
-  
-  
   render(){
     
     return (
       <div className="App">
         
-        <Modal>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <Modal content = {[<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Ut nemo excepturi ullam nihil, asperiores nisi atque ea dolores.
               Sed voluptates alias optio, sint numquam accusamus.
               Recusandae quia necessitatibus labore exercitationem!
               Porro aliquam necessitatibus, 
-              expedita modi doloremque fugit eligendi facilis accusantium per
-        </Modal>
+              expedita modi doloremque fugit eligendi facilis accusantium per</p>]}/>
+      
         {/* <Todolist /> */}
           {/* <Validate /> */}
           {/* <InputLimit /> */}

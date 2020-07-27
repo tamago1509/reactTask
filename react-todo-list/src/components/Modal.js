@@ -39,8 +39,7 @@ class Modal extends Component {
                             <button className="x" onClick={this.openModal}>
                             <span >&times;</span>
                             </button>
-                            <p>{this.props.children}
-                            </p>
+                            {this.props.content}
                         </div>
                         <div className="gr-btn">
                             <button className="btn ok" onClick={this.openModal}>Accept</button>
