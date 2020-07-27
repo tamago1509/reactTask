@@ -10,7 +10,8 @@ import Traficlight from './components/Traficlight';
 import Search from './components/Search';
 import InputLimit from './components/InputLimit';
 import Validate from './components/Validate';
-import Todolist from './components/Todolist'
+import Todolist from './components/Todolist';
+import Modal from './components/Modal';
 
 
 
@@ -25,6 +26,15 @@ import Todolist from './components/Todolist'
 
 
 class App extends Component {
+
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       
+    }
+  }
+  
   
   
   render(){
@@ -32,8 +42,14 @@ class App extends Component {
     return (
       <div className="App">
         
-
-        <Todolist />
+        <Modal>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Ut nemo excepturi ullam nihil, asperiores nisi atque ea dolores.
+              Sed voluptates alias optio, sint numquam accusamus.
+              Recusandae quia necessitatibus labore exercitationem!
+              Porro aliquam necessitatibus, 
+              expedita modi doloremque fugit eligendi facilis accusantium per
+        </Modal>
+        {/* <Todolist /> */}
           {/* <Validate /> */}
           {/* <InputLimit /> */}
           {/* <Search /> */}

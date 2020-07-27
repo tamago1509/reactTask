@@ -1,12 +1,12 @@
-.cover{
+/* .cover{
     display: flex;
     justify-content: center;
     font-family: 'Dancing Script';
     color: #fff;
     
-}
+} */
 
-.content{
+/* .content{
     width: 25%;
     height: 500px;
     border: 1px solid #ddd;
@@ -16,8 +16,8 @@
     top: 10px;
     margin: 0;
     
-}
-.empty{
+} */
+/* .empty{
     width: 70%;
     margin-top: 50px;
 }
@@ -53,7 +53,7 @@
     position: fixed;
     
  
-}
+} */
 .input{
     width: 30%;
     height: 150px;
