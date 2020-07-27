@@ -1,0 +1,12 @@
+.todo-item{
+    width: 100%;
+    border-radius: 15px;
+}
+.ready{
+    background-color: white;
+}
+
+.done{
+    background-color: rgba(235, 235, 235, 0.788);
+    text-decoration: line-through;
+}

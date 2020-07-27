@@ -1,0 +1,157 @@
+
+.cover{
+    display: flex;
+    justify-content: center;
+    font-family: 'Dancing Script';
+    color: #fff;
+    
+} 
+
+.content{
+    width: 25%;
+    height: 500px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    background-color: #7dc7d1;
+    position: relative;
+    top: 10px;
+    margin: 0;
+    
+}
+.empty{
+    width: 70%;
+    margin-top: 50px;
+}
+.plus{
+    width: 50px;
+   
+    
+}
+.btn{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    right: 35%;
+}
+
+.overlay{
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    
+ 
+}
+.input{
+    width: 30%;
+    height: 150px;
+    background-color:#fff;
+    color: #d42ab0;
+    padding-top: 5px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+    
+}
+.x{
+    position: absolute;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    display: block;
+    
+
+}
+.x span{
+    font-size: 2em;
+}
+.input input{
+    border: 0;
+
+}
+.input input:focus{
+    outline: none;
+    border-bottom: 1px solid #f00;
+    width: 80%;
+}
+.input p{
+    font-size: 1.2em;
+}
+.add-btn{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    display: block;
+    padding-left: 50%;
+    margin-top: 20px;
+    
+}
+.add-btn img{
+    width: 30px;
+}
+.taskShow{
+    width: 80%;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 20px 10px 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    
+}
+.title{
+    
+   display: flex;
+   justify-content: flex-start;
+   
+}
+.header {
+    display: flex;
+    
+    margin: 10px;
+    
+}
+.header img{
+    width: 20px;
+    margin-right: 5px;
+    
+}
+.header .last{
+    margin-left: auto;
+}
+.time{
+    margin-left: 25%;
+}
+.title p{
+    margin-left: 25px;
+}
+.footer p{
+    color: #000;
+}
+.done{
+    text-decoration: line-through !important;
+    opacity: 0.5;
+}
