@@ -1,37 +1,34 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
 import './App.css';
-import FollowUserListItem from './components/FollowUserListItem'
+import BookList from './components/book-list/BookList';
+import Form from './components/Form';
 
 class App extends Component {
   constructor(props) {
     super(props)
   
-    this.state = {
-       user: [
-         {
-         nick: 'phong9080',
-         avatarURL: 'https://picsum.photos/50'
-       },
-       {
-        nick: 'phong0908',
-        avatarURL: 'https://picsum.photos/50'
-       }
-      ]
-    }
+    this.getBook = this.getBook.bind(this);
   }
+  
 
+  async getBook(e){
+    e.preventDefault();
+    const bookName = e.target.elements.bookName.value;
+    const api_call = await fetch('http://localhost:3000/books');
+    const data = await api_call.json();
+    console.log(data);
+
+  }
   render() {
-    const {user} = this.state;
     return (
       <div className="App">
-        <FollowUserListItem user = {user}/>
+        <header className="App-header">
+          <h1 className="App-title">Book Search</h1>
+          <Form getBook = {this.getBook}/>
+        </header>
       </div>
-    )
+    );
   }
 }
-
-
-
 
 export default App;
