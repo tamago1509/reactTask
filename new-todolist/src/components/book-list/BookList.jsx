@@ -4,50 +4,27 @@ export class BookList extends Component {
     constructor(props) {
         super(props)
     
-        this.state = {
-             error: null,
-             isLoaded: false,
-             books: []
-        };
+       
     }
-    componentDidMount(){
-        fetch('http://localhost:5000/api/books')
-            .then(res =>res.json())
-            .then(
-                (result)=>{
-                    this.setState({
-                        isLoaded: true,
-                        books : result
-                    })
-                },
-                (error)=>{
-                    this.setState({
-                        isLoaded: true,
-                        error
-                    });
-                }
-            )
-    }
+    
     
 
     render() {
-        const {error, isLoaded, books} = this.state;
-        if(error){
-            return <div>Error : {error.message}</div>
-        } else if (!isLoaded){
-            return <div>Loading...</div>;
-        } else{
-            return (
-                <div>
-                   {
-                       books.map(book=>(
-                           <div>{book.title}</div>
-                       ))
-                   } 
+        return (
+            <div className="container">
+                <div  className="row">
+                {
+                    this.props.books.map(book=>(
+                            <div key={book.title} className="col-md-3">
+                                <img src={book.cover} alt={book.title}/>
+                                <h5>{book.title.length < 20 ? book.title:`${book.title.substring(0,22)}...`}</h5>
+                                <p>Author: <span>{book.author}</span></p>
+                            </div>
+                    ))
+                }
                 </div>
-            )
-
-        }
+            </div>
+        )
     }
 }
 
