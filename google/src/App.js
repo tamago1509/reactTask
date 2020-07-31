@@ -1,16 +1,23 @@
 import React from 'react';
-import Navbar from './components/Navbar'
-
 import './App.css';
-import Search from './components/Search';
+
+// import Home from './components/Home';
+// import Blog from './components/Blog'
+import MainMenu from './components/MainMenu';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Search />
-    </div>
+    
+      <div className="App">
+       
+        <MainMenu />
+        
+      </div>
+      
   );
 }
+
 
 export default App;
